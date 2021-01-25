@@ -1,0 +1,53 @@
+#N canvas 356 23 884 817 12;
+#X obj 105 105 cnv 15 90 70 empty empty empty 20 12 0 14 -13330 -66577
+0;
+#X obj 117 132 tgl 30 0 empty empty SYNC -4 -10 0 16 -4032 -1 -262144
+0 1;
+#X obj 216 112 receive bang;
+#X obj 216 131 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 245 159 spigot;
+#X obj 245 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 245 225 f;
+#X obj 301 229 + 1;
+#X floatatom 245 260 5 0 0 0 - - -;
+#X msg 300 185 0;
+#X floatatom 245 318 5 0 0 0 - - -;
+#X obj 245 289 % 2;
+#X obj 243 346 select 0 1 2;
+#X obj 373 365 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 345 465 send tempo1;
+#X obj 143 461 send tempo2;
+#X obj 161 139 tgl 20 0 empty empty 2X 2 -10 0 14 -4034 -1 -262144
+0 1;
+#X obj 166 367 spigot;
+#X obj 169 421 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 488 159 5 0 0 0 - - -;
+#X obj 488 237 send state;
+#X obj 84 245 send state2;
+#X connect 1 0 4 1;
+#X connect 1 0 21 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 1;
+#X connect 8 0 11 0;
+#X connect 9 0 6 1;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 12 0 13 0;
+#X connect 12 1 13 0;
+#X connect 12 1 17 0;
+#X connect 13 0 14 0;
+#X connect 16 0 17 1;
+#X connect 16 0 19 0;
+#X connect 17 0 18 0;
+#X connect 18 0 15 0;
+#X connect 19 0 20 0;
+#X coords 0 -1 1 1 100 80 2 100 100;

@@ -1,0 +1,11 @@
+#N canvas 253 23 1119 855 12;
+#X obj 635 196 abs_piano;
+#X obj 406 583 layer3;
+#X obj 173 582 voice_layer;
+#X obj 172 196 layer1;
+#X obj 465 116 SYNC;
+#X obj 407 196 layer2;
+#X obj 466 503 SYNC2;
+#X obj 227 502 SYNC3;
+#X obj 635 585 abs_bass2;
+#X obj 899 508 recording_button;

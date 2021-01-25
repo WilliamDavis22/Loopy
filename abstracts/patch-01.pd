@@ -1,0 +1,15 @@
+#N canvas 10 50 1440 855 12;
+#X obj 104 105 cnv 15 1240 790 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 596 199 abs_piano;
+#X obj 367 586 layer3;
+#X obj 134 585 voice_layer;
+#X obj 133 199 layer1;
+#X obj 426 119 SYNC;
+#X obj 368 199 layer2;
+#X obj 427 506 SYNC2;
+#X obj 188 505 SYNC3;
+#X obj 597 586 abs_bass2;
+#X obj 881 121 recording_button;
+#X obj 822 508 abs_main_vol;
+#X coords 0 -1 1 1 1250 800 2 100 100;

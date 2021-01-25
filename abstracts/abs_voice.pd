@@ -1,0 +1,64 @@
+#N canvas 281 584 957 568 12;
+#X obj 649 254 writesf~;
+#X msg 648 215 stop;
+#X msg 482 215 open base.wav \, start;
+#X obj 524 292 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 584 363 readsf~;
+#X obj 523 329 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 652 344 start;
+#X msg 741 344 stop;
+#X obj 584 399 *~ 0.5;
+#X obj 578 498 dac~;
+#X msg 587 307 open base.wav;
+#X obj 357 197 select 1 0;
+#X obj 359 133 timer;
+#X floatatom 458 150 5 0 0 0 - - -;
+#X obj 387 252 metro 1000;
+#X obj 524 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 739 236 inlet~;
+#X obj 114 158 tgl 40 0 empty empty RECORD 0 -12 0 20 -258113 -1 -1
+0 1;
+#X obj 116 263 vsl 15 128 0 1 0 0 empty empty VOL -6 -12 0 20 -4034
+-1 -1 0 1;
+#X obj 181 264 vsl 15 128 0 1 0 0 empty empty PITCH -17 -12 0 20 -4034
+-1 -1 0 1;
+#X obj 265 265 vsl 15 128 0 1 0 0 empty empty REVERB -26 -12 0 20 -4034
+-1 -1 0 1;
+#X obj 584 436 +~ 0;
+#X obj 555 167 outlet;
+#X obj 212 166 nbx 4 30 -1e+37 1e+37 0 1 empty empty DURATION 0 -14
+0 16 -204800 -1 -1 5517.64 256;
+#X text 181 113 loop - vocal layer;
+#X obj 46 140 inlet;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 10 0;
+#X connect 3 0 5 0;
+#X connect 4 0 8 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 7 0 4 0;
+#X connect 8 0 21 0;
+#X connect 10 0 4 0;
+#X connect 11 0 12 0;
+#X connect 11 0 2 0;
+#X connect 11 1 12 1;
+#X connect 11 1 14 0;
+#X connect 11 1 1 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 1;
+#X connect 13 0 22 0;
+#X connect 13 0 23 0;
+#X connect 14 0 15 0;
+#X connect 15 0 3 0;
+#X connect 16 0 0 0;
+#X connect 17 0 11 0;
+#X connect 18 0 8 1;
+#X connect 19 0 21 1;
+#X connect 21 0 9 0;
+#X connect 21 0 9 1;
+#X connect 25 0 17 0;
+#X coords 0 -1 1 1 220 300 2 100 100;
